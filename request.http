@@ -1,0 +1,22 @@
+GET http://localhost:3000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImR1eSIsImlhdCI6MTY1MjUwMjI0NywiZXhwIjoxNjUyNTAyMzY3fQ.atK-gJmSTQSrsSy42o2hPUGgaVIt8q66RtNeKFQn-BM
+###
+POST  http://localhost:3500/login
+Content-Type: application/json
+
+{
+    "username": "duy"
+}
+###
+POST http://localhost:3500/token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImR1eSIsImlhdCI6MTY1MjUwMTgxMywiZXhwIjoxNjUyNTAyNDEzfQ.G_nlPRoulwT1xWYXs9DR-SD3zw3-ev_QgEjTmTqd2xI"
+}
+
+###
+GET http://localhost:3500/all
+###
+DELETE http://localhost:3500/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImR1eSIsImlhdCI6MTY1MjUwMTc3MSwiZXhwIjoxNjUyNTAyMzcxfQ.8ron-SkrS66oSZtorHB3p_d6Wpkr6jKcZpOv-oWBaWk
